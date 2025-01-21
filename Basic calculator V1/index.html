@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic calculator</title>
+    <link   rel="stylesheet" href="style.css"> 
+    
+  </head>
+  <body >
+
+
+    
+    <h1 class="header">Calculator VI</h1>
+    <style>
+      body{
+      border: 1px solid black;
+      
+      }
+      
+      </style>
+      <section class="container">
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Enter first number" required>
+        <span class="operation-sign" id="operationSign">+</span>
+        <input type="number" id="num2" placeholder="Enter second number" required>
+    
+        
+          <h3>Select Operation:</h3>
+          <div class="row">
+          
+          <label><input type="radio" name="operation" value="add" checked onclick="updateOperationSign('+')"> Add</label>
+          <br>
+          <label><input type="radio" name="operation" value="subtract" onclick="updateOperationSign('-')"> Subtract</label>
+          <br>
+         
+          <label><input type="radio" name="operation" value="multiply" onclick="updateOperationSign('×')"> multiply</label>
+          <br>
+          <label><input type="radio" name="operation" value="divide" onclick="updateOperationSign('÷')"> divide</label>
+          <br>
+          
+          <label><input type="radio" name="operation" value="modulus" onclick="updateOperationSign('%')"> Modulus</label>
+          <br>
+          <label><input type="radio" name="operation" value="exponent" onclick="updateOperationSign('^')"> Exponent</label>
+          <br>
+          
+          <label><input type="radio" name="operation" value="squareRoot" onclick="updateOperationSign('√')"> Square Root</label>
+          <br>
+          <label><input type="radio" name="operation" value="log" onclick="updateOperationSign('log')"> log</label>
+        
+        </div>
+  <div class="button">
+      <button onclick="evaluateOperation()">Evaluate</button>
+  </div>
+
+    <h2>Result: <span id="result"></span></h2>
+</div>
+
+</section>
+    <script src="script.js"></script>
+  </body>

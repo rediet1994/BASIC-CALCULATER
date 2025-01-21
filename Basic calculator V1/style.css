@@ -1,0 +1,39 @@
+body {
+    
+   
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 237, 230);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container{
+
+    
+    background-color: rgba(95, 71, 98, 0.6);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.row{
+    display: flex;
+   gap: 20px;
+}
+
+.calculator {
+    margin-top: 20px;
+}
+.operation-sign {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+
+
